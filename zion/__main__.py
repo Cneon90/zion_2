@@ -1,3 +1,5 @@
+import os
+print(os.getcwd())
 import zion.mqtt.mqtt as mqtt
 import zion.jabber.myJabber as myJabber
 import zion.telegramm.bot_telegramm as telegramm
