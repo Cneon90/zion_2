@@ -1,0 +1,57 @@
+
+{% extends "zion/main.html" %}
+{% load static %}
+{% block outside_temperature %}
+   {{ outside_temperature }}
+{% endblock %}
+
+{% block twitter_url %}
+ {{ twitter_url }}
+{% endblock %}
+
+{% block instagram_url %}
+ {{ instagram_url }}
+{% endblock %}
+
+{% block vk_url %}
+ {{ vk_url }}
+{% endblock %}
+
+
+{% block main_menu %}
+    <ul id="navigation">
+        {% for url in main_urls %}
+            <li>
+                <a href="{{ url.url }}">{{url.name_url}}</a>
+                    <ul class="submenu">
+                         {% for sub_url in main_sub_urls %}
+
+                                {% if url.id == sub_url.name_url_id %}
+                                    <li><a href="{{sub_url.url }}">{{ sub_url.name }}</a></li>
+                                {% endif %}
+
+                         {% endfor %}
+                    </ul>
+
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+{% block main_riht %}
+
+ <div class="col-lg-4">
+      <a href="#"> <div class="trand-right-single d-flex">
+
+                            <div class="trand-right-img">
+                                <img src="{% static "zion/img/trending/right1.jpg" %}" alt="">
+                            </div>
+                            <div class="trand-right-cap">
+                                <span class="color1">Concert</span>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                            </div>
+                  </div>  </a>
+ </div>
+
+{% endblock %}

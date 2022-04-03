@@ -1,0 +1,285 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>News HTML-5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static "zion/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="{% static "zion/css/bootstrap.min.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/owl.carousel.min.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/ticker-style.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/flaticon.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/slicknav.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/animate.min.css" %}">
+            <link rel="stylesheet" href="{% static "zion/css/magnific-popup.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/fontawesome-all.min.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/themify-icons.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/slick.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/nice-select.css"%}">
+            <link rel="stylesheet" href="{% static "zion/css/style.css"%}">
+   </head>
+
+   <body>
+       
+
+  <!--    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static "zion/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <header>
+        <!-- Header Start -->
+       <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top black-bg d-none d-md-block">
+                   <div class="container">
+                       <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>     
+                                        <li><img src="{% static "zion/img/icon/header_icon1.png" %}" alt="">{% block outside_temperature %}  }}     {% endblock %}ºc  </li>
+                                        <li> Показания:</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul class="header-social">
+                                       <!--  <li><a href="{% block twitter_url %}     {% endblock %}"><i class="fab fa-twitter"></i> </a></li> -->
+                                        <li><a href="{% block instagram_url %}     {% endblock %}"><i class="fab fa-instagram"></i></a></li>
+                                       <li> <a href="{% block vk_url %}    {% endblock %}"><i class="fab fa-vk"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="header-mid d-none d-md-block">
+                   <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static "zion/img/logo/logo2.png"%}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <div class="header-banner f-right ">
+                                    <img src="{% static "zion/img/hero/header_card.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+               <div class="header-bottom header-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+                                <!-- sticky -->
+                                    <div class="sticky-logo">
+                                        <a href="index.html"><img src="{% static "zion/img/logo/logo.png" %} " alt=""></a>
+                                    </div>
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-md-block">
+                                    <nav>
+
+                                        {% block main_menu %}     {% endblock %}
+
+                                    </nav>
+                                </div>
+                            </div>             
+                            <div class="col-xl-2 col-lg-2 col-md-4">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <i class="fas fa-search special-tag"></i>
+                                    <div class="search-box">
+                                        <form action="#">
+                                            <input type="text" placeholder="Search">
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-md-none"></div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+    <!-- Trending Area Start -->
+    <div class="trending-area fix">
+        <div class="container">
+            <div class="trending-main">
+                <!-- Trending Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="trending-tittle">
+                            <strong>Trending now</strong>
+                            <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                            <div class="trending-animated">
+                                <ul id="js-news" class="js-hidden">
+                                    <li class="news-item">Кирилл очень крут.</li>
+                                    <li class="news-item">Spondon IT sit amet, consectetur.......</li>
+                                    <li class="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Trending Top -->
+                        <div class="trending-top mb-30">
+                            <div class="trend-top-img">
+                                <img src="{% static "zion/img/trending/trending_top2.jpg" %}" alt="">
+                                <div class="trend-top-cap">
+                                    <span>one</span>
+                                     <h1> sdfsdfsdf  </h1>
+                                    <h2> <a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trending Bottom -->
+                        <div class="trending-bottom">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                <div class="single-bottom mb-35">
+                                    <div class="trend-bottom-img mb-30">
+                                        <img src="{% static "zion/img/trending/trending_bottom1.jpg" %}" alt="">
+                                    </div>
+                                    <div class="trend-bottom-cap">
+                                        <span class="color1">Lifestyple</span>
+                                        <h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="single-bottom mb-35">
+                                        <div class="trend-bottom-img mb-30">
+                                            <img src="{% static "zion/img/trending/trending_bottom2.jpg" %}" alt="">
+                                        </div>
+                                        <div class="trend-bottom-cap">
+                                            <span class="color2">Sports</span>
+                                            <h4><h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="single-bottom mb-35">
+                                        <div class="trend-bottom-img mb-30">
+                                            <img src="{% static "zion/img/trending/trending_bottom3.jpg" %}" alt="">
+                                        </div>
+                                        <div class="trend-bottom-cap">
+                                            <span class="color3">Travels</span>
+                                            <h4><a href="details.html"> Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Riht content -->
+                    {% block main_riht %}     {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </main>
+    
+   <footer>
+       <!-- Footer Start-->
+
+       <!-- footer-bottom aera -->
+       <div class="footer-bottom-area">
+           <div class="container">
+               <div class="footer-border">
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="footer-copy-right">
+                                    Dgdg
+                                sdfsdf
+                                sdf
+                                sdfsdf
+                                <br>
+                                 sdf
+                                sdfsdf sdf
+                                sdfsdf
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-menu f-right">
+
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+       <!-- Footer End-->
+   </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="{% static "zion/js/vendor/modernizr-3.5.0.min.js" %}"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="{% static "zion/js/vendor/jquery-1.12.4.min.js" %}"></script>
+        <script src="{% static "zion/js/popper.min.js" %}"></script>
+        <script src="{% static "zion/js/bootstrap.min.js"%}"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="{% static "zion/js/jquery.slicknav.min.js" %}"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="{% static "zion/js/owl.carousel.min.js " %}"></script>
+        <script src="{% static "zion/js/slick.min.js " %}"></script>
+        <!-- Date Picker -->
+        <script src="{% static "zion/js/gijgo.min.js "%}"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="{% static "zion/js/wow.min.js " %}"></script>
+		<script src="{% static "zion/js/animated.headline.js" %}"></script>
+        <script src="{% static "zion/js/jquery.magnific-popup.js" %}"></script>
+
+        <!-- Breaking New Pluging -->
+        <script src="{% static "zion/js/jquery.ticker.js" %}"></script>
+        <script src="{% static "zion/js/site.js" %}"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="{% static "zion/js/jquery.scrollUp.min.js" %}"></script>
+        <script src="{% static "zion/js/jquery.nice-select.min.js" %}"></script>
+		<script src="{% static "zion/js/jquery.sticky.js" %}"></script>
+        
+        <!-- contact js -->
+        <script src="{% static "zion/js/contact.js" %}"></script>
+        <script src="{% static "zion/js/jquery.form.js" %}"></script>
+        <script src="{% static "zion/js/jquery.validate.min.js" %}"></script>
+        <script src="{% static "zion/js/mail-script.js" %}"></script>
+        <script src="{% static "zion/js/jquery.ajaxchimp.min.js" %}"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="{% static "zion/js/plugins.js" %}"></script>
+        <script src="{% static "zion/js/main.js" %}"></script>
+        
+    </body>
+</html>

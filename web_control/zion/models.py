@@ -14,5 +14,24 @@ class Profile(models.Model):
         return self.Passport_series
 
 
-admin.site.register(Profile)
 
+class main_linkes(models.Model):
+    name_url = models.CharField(max_length=50, blank=True)
+    url = models.CharField(max_length=255, blank=True)
+    def __str__(self):
+        return self.name_url
+
+class main_sub_menu(models.Model):
+    name_url = models.ForeignKey(main_linkes, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50, blank=True)
+    url  = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+
+
+admin.site.register(Profile)
+admin.site.register(main_linkes)
+admin.site.register(main_sub_menu)
